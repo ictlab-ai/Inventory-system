@@ -1,0 +1,166 @@
+/* Стили при разрешении экрана на 6000px */
+
+@media only screen and (max-width: 6000px) {
+	
+	#enb {
+	
+		
+	
+	}
+	
+	#dis, .header-lang, .header-logo {
+		display:none;
+	}
+	
+	.btn-symbol {
+
+  display: inline-block;
+  position: relative;
+  height: fit-content;
+  line-height: 1.4em;
+  padding: .1em .5em 0 .5em;
+  border-radius: 35px;
+  border: .2vw solid var(--color-line);
+  border-color: var(--color-line);
+  background: var(--bgcolor-api) no-repeat;
+  background-color: var(--bgcolor-open);
+  background-image: linear-gradient(to left, var(--color-line), var(--color-line));
+  background-position: calc(100% - 2em) 0, calc(100% - 2em) 0, 0 0;
+  background-size: .1em 100%, .1em 100%, auto auto;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: min(2vw, 1.3rem);
+  font-weight: 600;
+  --color-open: rgba(var(--color-open-rgb), 1);
+  --color-close-rgb: 100, 100, 100;
+  --color-close: rgba(var(--color-close-rgb), 1);
+  --color-extra-rgb: 217, 163, 46;
+  --color-extra: rgba(var(--color-extra-rgb), 1);
+  --color-error: rgb(204, 0, 0);
+  --color-line-rgb: 170, 170, 170;
+  --color-line: rgba(var(--color-line-rgb), 1);
+  --color-protective-screen: rgba(0, 0, 0, 0);
+  --max-widht-app: 960px;
+  --padding-w: min(3vw, 20px);
+  --padding-h: min(4vh, 1rem);
+  --access-main-params: none;
+  --access-save-as: 0;
+  --main-params-background: var(--bgcolor-open);
+  --save-as-background: var(--bgcolor-api);
+
+		
+	}
+	
+#side {
+	margin-top: -15px;
+	margin-left: -15px;
+	position:fixed;
+	height: 300vh;
+	width: 200px;
+	background:brown;
+	float: left;
+	display: block;
+}
+
+#content {
+	position:absolute;
+	margin-left: 200px;
+	float: right;
+	display: block;
+	width:80%;
+	height: 100vh;
+}
+
+#nav {
+	list-style-type: none;
+	display: block;
+	line-height: 30px;
+	text-indent: -10px;
+	padding-top: 20px;
+}
+
+#nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+
+}
+
+#txt {
+	width: 250px;
+	height: 30px;
+	border-radius: 10px;
+	border-style: solid;
+	text-indent: 5px;
+	color: grey;
+	cursor: pointer;
+}
+
+#u {
+	line-height: 50px;
+	width:100%;
+}
+
+#sub {
+	width: 200px;
+	height: 40px;
+	border-radius: 10px;
+	border-style: solid;
+	background: purple;
+	color: white;
+	cursor: pointer;
+}
+
+#sub:hover {
+	width: 200px;
+	height: 40px;
+	border-radius: 10px;
+	border-style: solid;
+	background: red;
+	color: white;
+	cursor: pointer;
+}
+
+#fset {
+	width: 100%;
+	border-color: silver;
+	border-style: solid;
+	border-radius: 5px;
+	background: rgba(255,255,255,0.2);
+}
+
+#tbl {
+	width:90%;
+}
+
+#fcon {
+	display: block;
+	float: left;
+}
+
+#scon {
+	display: block;
+	float: left;
+	
+}
+
+img {
+	margin-top: 20px;
+	margin-right: 30px;
+	margin-left: 20px;
+	display: block;
+	background: silver;
+	width: 250px;
+	height: 250px;
+	border-radius: 360px;
+}
+	
+#no {
+	margin-top: 20px;
+	margin-right: 30px;
+	margin-left: 20px;
+	width: 50px;
+	height: 50px;
+}
+
+}

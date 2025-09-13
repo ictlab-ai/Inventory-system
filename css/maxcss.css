@@ -1,0 +1,118 @@
+/* Основные стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: none; /* Убрали фоновое изображение */
+    background-size: none;
+    background-repeat: none;
+    background-attachment: none;
+}
+
+/* Секция регистрации */
+#regs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+}
+
+#reg {
+    margin: 0 auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    background: rgba(192, 192, 192, 0.9); /* Серебряный фон */
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Поля ввода */
+#fset {
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    background: rgba(211, 211, 211, 0.5); /* Серо-серебряный фон для формы */
+}
+
+#txt, #psw {
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    color: #555;
+    background-color: #e0e0e0; /* Светлый серебристый фон для полей */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#txt:focus, #psw:focus {
+    border-color: #8b8b8b; /* Темный цвет при фокусе */
+    outline: none;
+    box-shadow: 0 0 5px rgba(139, 139, 139, 0.5);
+}
+
+/* Кнопка */
+#sub {
+    width: 90%;
+    max-width: 200px;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: none;
+    background: #8b8b8b; /* Серый цвет кнопки */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#sub:hover {
+    background: white;
+    color: #8b8b8b;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Медиазапросы для адаптивности */
+@media only screen and (max-width: 1200px) {
+    #reg {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
+    #txt, #psw, #sub {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #reg {
+        padding: 20px;
+        font-size: 0.8rem;
+    }
+
+    #sub {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #sub {
+        font-size: 0.8rem;
+        padding: 7px;
+    }
+}

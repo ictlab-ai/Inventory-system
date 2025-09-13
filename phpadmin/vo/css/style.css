@@ -1,0 +1,222 @@
+body {
+
+font-family: Arial;
+font-size: 12px;
+
+
+}
+
+#div {
+
+visibility: visible;
+
+}
+
+@media only screen and (max-width: 1400px ) {
+
+.first {
+
+display: block;
+width: 50%;
+text-align: center;
+
+
+}
+
+.intent {
+display: block;
+margin-left: 5px;
+margin-right: 5px;
+margin-top: 30px;
+margin-bottom: 30px;
+text-align: center;
+
+}
+
+.in {
+  
+  width: 100px;
+}
+
+.td {
+  width: 350px;
+}
+
+#ch {
+
+margin-left: -5px;
+
+}
+
+}
+
+@media only screen and (max-width: 1000px ) {
+
+.first {
+
+display: block;
+width: 65%;
+text-align: center;
+
+
+}
+
+.intent {
+display: block;
+margin-left: 5px;
+margin-right: 5px;
+margin-top: 30px;
+margin-bottom: 30px;
+
+}
+
+.in {
+ width: 75px;
+}
+
+.td {
+  width: 250px;
+}
+
+.chart {
+
+width: 900px; 
+height: 300px; 
+text-align: center; 
+margin-left: 100px;
+
+}
+
+}
+
+@media only screen and (max-width: 800px ) {
+
+.first {
+
+display: block;
+width: 90%;
+text-align: center;
+
+
+}
+
+.intent {
+display: block;
+margin-left: 5px;
+margin-right: 5px;
+margin-top: 30px;
+margin-bottom: 30px;
+
+}
+
+.in {
+ width: 75px;
+}
+
+.td {
+  width: 250px;
+}
+
+.chart {
+
+width: 400px; 
+height: 200px; 
+text-align: center; 
+margin-left: -75px;
+
+}
+
+}
+
+
+.second {
+
+display: block;
+width: 83%;
+text-align: center;
+
+}
+
+.submit1 {
+	width: 20px;
+	padding-left: 7px;
+  border: 0;
+  border-radius: 5px;
+  background: orange;
+  font-size: 11px;
+  font-weight:bold;
+  color: white;
+  margin: 0px;
+}
+
+.submit2 {
+	width: 20px;
+	padding-left: 7px;
+  border: 0;
+  border-radius: 5px;
+  background: purple;
+  font-size: 11px;
+  font-weight:bold;
+  color: white;
+  margin-left: 0px;
+}
+
+.submit3 {
+	width: 20px;
+	padding-left: 7px;
+  border: 0;
+  border-radius: 5px;
+  background: green;
+  font-size: 11px;
+  font-weight:bold;
+  color: white;
+  margin: 0px;
+}
+
+.submit4 {
+	width: 20px;
+	padding-left: 7px;
+  border: 0;
+  border-radius: 5px;
+  background: navy;
+  font-size: 11px;
+  font-weight:bold;
+  color: white;
+  margin: 0px;
+}
+
+.submit5 {
+	width: 20px;
+	padding-left: 7px;
+  border: 0;
+  border-radius: 5px;
+  background: gray;
+  font-size: 11px;
+  font-weight:bold;
+  color: white;
+  margin: 0px;
+}
+
+.submit6 {
+	width: 20px;
+	padding-left: 7px;
+  border: 0;
+  border-radius: 5px;
+  background: red;
+  font-size: 11px;
+  font-weight:bold;
+  color: white;
+  margin: 0px;
+}
+
+.submit7 {
+	width: 20px;
+	padding-left: 7px;
+  border: 0;
+  border-radius: 5px;
+  background: black;
+  font-size: 11px;
+  font-weight:bold;
+  color: white;
+  margin: 0px;
+}

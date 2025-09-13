@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Html-Qrcode Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset = "utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
+        #qr-reader {
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+        }
+        #qr-result {
+            width: 100%;
+            max-width: 500px;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="qr-reader"></div>
+    <input type="text" id="qr-result" readonly placeholder="Сканированный текст появится здесь...">
+    
+    <script src="html5-qrcode.min.js"></script>
+    <script>
+        function docReady(fn) {
+            if (document.readyState === "complete" || document.readyState === "interactive") {
+                setTimeout(fn, 1);
+            } else {
+                document.addEventListener("DOMContentLoaded", fn);
+            }
+        }
+
+        docReady(function () {
+            var resultInput = document.getElementById('qr-result');
+            var lastResult;
+
+            function onScanSuccess(decodedText, decodedResult) {
+                if (decodedText !== lastResult) {
+                    lastResult = decodedText;
+                    resultInput.value = decodedText; // Вывод в текстовое поле
+                    console.log(`Scan result: ${decodedText}`, decodedResult);
+                }
+            }
+
+            var html5QrcodeScanner = new Html5QrcodeScanner("qr-reader", { fps: 10, qrbox: { width: 250, height: 250 } });
+            html5QrcodeScanner.render(onScanSuccess);
+        });
+    </script>
+</body>
+</html>
