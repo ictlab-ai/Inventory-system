@@ -2,3 +2,5 @@
 FInovators inventory system
 
 Информация о проекте в файле qr_.pdf
+
+ERD в файле db.png
